@@ -1,0 +1,179 @@
+// configuration {
+//   display-drun: "Applications:";
+//   display-window: "Windows:";
+//   drun-display-format: "{icon} {name}";
+//   font: "JetBrainsMono Nerd Font Medium 10";
+//   modi: "window,run,drun,emoji";
+//   
+//   // enabling the icons
+//   show-icons: true;
+//   icon-theme: "Papirus";
+// }
+//
+// @theme "/dev/null"
+//
+// * {
+//   bg: #1e1e2eFF;
+//   bg-alt: #585b7066;
+//   bg-selected: #31324466;
+//
+//   fg: #cdd6f4;
+//   fg-alt: #7f849c;
+//
+//   
+//   border: 0;
+//   margin: 0;
+//   padding: 0;
+//   spacing: 0;
+// }
+//
+// window {
+//   width: 30%;
+//   background-color: @bg;
+//   border-radius: 8;
+// }
+//
+// element {
+//   padding: 8 12;
+//   background-color: transparent;
+//   text-color: @fg-alt;
+// }
+//
+// element selected {
+//   text-color: @fg;
+//   background-color: @bg-selected;
+// }
+//
+// element-text {
+//   background-color: transparent;
+//   text-color: inherit;
+//   vertical-align: 0.5;
+// }
+//
+// element-icon {
+//   size: 24;
+//   padding: 0 10 0 0;
+//   background-color: transparent;
+// }
+//
+// entry {
+//   padding: 12;
+//   background-color: @bg-alt;
+//   text-color: @fg;
+// }
+//
+// inputbar {
+//   children: [prompt, entry];
+//   background-color: @bg;
+// }
+//
+// listview {
+//   background-color: @bg;
+//   columns: 1;
+//   lines: 10;
+// }
+//
+// mainbox {
+//   children: [inputbar, listview];
+//   background-color: @bg;
+// }
+//
+// prompt {
+//   enabled: true;
+//   padding: 12 0 0 12;
+//   background-color: @bg-alt;
+//   text-color: @fg;
+// }
+//
+// /* vim: ft=sass
+configuration {
+  display-drun: "Applications:";
+  display-window: "Windows:";
+  drun-display-format: "{icon} {name}";
+  font: "JetBrainsMono Nerd Font Medium 10";
+  modi: "window,run,drun,emoji";
+  
+  // enabling the icons
+  show-icons: true;
+  icon-theme: "Papirus";
+}
+
+@theme "/dev/null"
+
+* {
+  /* Deep Forest Mapping */
+  bg:          #0f1410FF; /* base */
+  bg-alt:      #161d17CC; /* surface with slight transparency */
+  bg-selected: #2e3d2fEE; /* highlightMed */
+
+  fg:          #cfe1d1;   /* text */
+  fg-alt:      #7c927d;   /* subtle */
+  accent:      #a59e75;   /* The mossy gold from your Waybar */
+
+  border: 0;
+  margin: 0;
+  padding: 0;
+  spacing: 0;
+}
+
+window {
+  width: 30%;
+  background-color: @bg;
+  border-radius: 8;
+  border: 2;
+  border-color: @bg-selected; /* Subtle border for definition */
+}
+
+element {
+  padding: 8 12;
+  background-color: transparent;
+  text-color: @fg-alt;
+}
+
+element selected {
+  text-color: @fg;
+  background-color: @bg-selected;
+}
+
+element-text {
+  background-color: transparent;
+  text-color: inherit;
+  vertical-align: 0.5;
+}
+
+element-icon {
+  size: 24;
+  padding: 0 10 0 0;
+  background-color: transparent;
+}
+
+entry {
+  padding: 12;
+  background-color: @bg-alt;
+  text-color: @fg;
+}
+
+inputbar {
+  children: [prompt, entry];
+  background-color: @bg;
+}
+
+listview {
+  background-color: @bg;
+  columns: 1;
+  lines: 10;
+}
+
+mainbox {
+  children: [inputbar, listview];
+  background-color: @bg;
+}
+
+prompt {
+  enabled: true;
+  padding: 12 0 0 12;
+  background-color: @bg-alt;
+  text-color: @accent; /* Now matches your Waybar accent */
+}
+
+/* vim: ft=sass */
